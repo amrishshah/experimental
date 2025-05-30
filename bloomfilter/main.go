@@ -35,8 +35,11 @@ func NewBloomFilter(size int32) *BloomFilter {
 func (b *BloomFilter) Add(key string) {
 	//Hash String to INT32
 	idx := murmurhash(key, b.size)
+	fmt.Println(idx)
 	aidx := idx / 8 // array index
+
 	bidx := idx % 8
+
 	b.filter[aidx] = b.filter[aidx] | (1 << bidx)
 }
 
@@ -53,7 +56,7 @@ func (b *BloomFilter) print() {
 
 func main() {
 	b := NewBloomFilter(10)
-	var keys = []string{"a", "b", "c"}
+	var keys = []string{"aqwertyuiuytrewq", "b", "c"}
 
 	for _, key := range keys {
 		b.Add(key)
