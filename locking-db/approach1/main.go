@@ -87,7 +87,7 @@ func AssignTicket(user User, wg *sync.WaitGroup) {
 	row := txn.QueryRow(`select id 
 	from assign_seat
 	where user_id is NULL
-	order by id  limit 1 FOR update skip locked`)
+	order by id  limit 1`)
 	if row.Err() != nil {
 		txn.Rollback()
 		log.Fatal(row.Err())
