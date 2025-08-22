@@ -1,4 +1,4 @@
-module github.com/amrishshah/experimental/locking-db/approach1
+module github.com/amrishshah/experimental/locking-db/approach-for-update
 
 go 1.22.3
 

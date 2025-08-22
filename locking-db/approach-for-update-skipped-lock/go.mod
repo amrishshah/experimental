@@ -1,4 +1,4 @@
-module github.com/amrishshah/experimental/approach1/locking-db
+module github.com/amrishshah/experimental/locking-db/approach-for-update-skipped-lock
 
 go 1.22.3
 
