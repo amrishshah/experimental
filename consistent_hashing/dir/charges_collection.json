@@ -1,0 +1,195 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2024-04-15 13:11:28.654528",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "loan_id",
+  "lender",
+  "reference_id",
+  "column_break_8lztj",
+  "charge_id",
+  "repayment_id",
+  "section_break_dqlh0",
+  "charges_type",
+  "collected_at",
+  "settled_at",
+  "column_break_6znfo",
+  "charges_amount",
+  "collection_status",
+  "transaction_reference",
+  "section_break_umdo",
+  "document_number",
+  "tax_rate",
+  "cgst",
+  "invoice_value",
+  "original_doc_date",
+  "column_break_yzel",
+  "document_date",
+  "igst",
+  "sgst",
+  "original_doc_no",
+  "document_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "loan_id",
+   "fieldtype": "Link",
+   "label": "Loan ID",
+   "options": "Lender Loan"
+  },
+  {
+   "fieldname": "lender",
+   "fieldtype": "Link",
+   "label": "Lender",
+   "options": "Partner"
+  },
+  {
+   "fieldname": "column_break_8lztj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "repayment_id",
+   "fieldtype": "Link",
+   "label": "Repayment ID",
+   "options": "Repayment Schedule"
+  },
+  {
+   "fieldname": "section_break_dqlh0",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "charges_type",
+   "fieldtype": "Link",
+   "label": "Charges Type",
+   "options": "Charges Type"
+  },
+  {
+   "fieldname": "collected_at",
+   "fieldtype": "Date",
+   "label": "Collected at"
+  },
+  {
+   "fieldname": "column_break_6znfo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "charges_amount",
+   "fieldtype": "Float",
+   "label": "Charges Amount (Excluding GST)"
+  },
+  {
+   "fieldname": "collection_status",
+   "fieldtype": "Select",
+   "label": "Collection Status",
+   "options": "pending\ncollected\nwaive off"
+  },
+  {
+   "fieldname": "charge_id",
+   "fieldtype": "Data",
+   "label": "Charge ID"
+  },
+  {
+   "fieldname": "section_break_umdo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "document_number",
+   "fieldtype": "Data",
+   "label": "Document Number"
+  },
+  {
+   "fieldname": "tax_rate",
+   "fieldtype": "Int",
+   "label": "Rate of Tax"
+  },
+  {
+   "fieldname": "cgst",
+   "fieldtype": "Float",
+   "label": "CGST"
+  },
+  {
+   "fieldname": "invoice_value",
+   "fieldtype": "Float",
+   "label": "Invoice Value"
+  },
+  {
+   "fieldname": "original_doc_date",
+   "fieldtype": "Date",
+   "label": "Original Document Date"
+  },
+  {
+   "fieldname": "column_break_yzel",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "document_date",
+   "fieldtype": "Date",
+   "label": "Document Date"
+  },
+  {
+   "fieldname": "igst",
+   "fieldtype": "Float",
+   "label": "IGST"
+  },
+  {
+   "fieldname": "sgst",
+   "fieldtype": "Float",
+   "label": "SGST"
+  },
+  {
+   "fieldname": "original_doc_no",
+   "fieldtype": "Data",
+   "label": "Original Document No"
+  },
+  {
+   "fieldname": "document_type",
+   "fieldtype": "Select",
+   "label": "Document Type",
+   "options": "\nInvoice\nCredit Note\nDebit Note"
+  },
+  {
+   "fieldname": "reference_id",
+   "fieldtype": "Data",
+   "label": "Reference ID"
+  },
+  {
+   "fieldname": "settled_at",
+   "fieldtype": "Date",
+   "label": "Settlement Date"
+  },
+  {
+   "fieldname": "transaction_reference",
+   "fieldtype": "Data",
+   "label": "Transaction Reference"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-04-22 14:49:21.175919",
+ "modified_by": "Administrator",
+ "module": "Loan Details",
+ "name": "Charges Collection",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

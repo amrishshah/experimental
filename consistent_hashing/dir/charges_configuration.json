@@ -1,0 +1,69 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2024-04-15 13:14:57.159232",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "pool_id",
+  "investor_share",
+  "column_break_pfjkz",
+  "charges_type",
+  "lender_share"
+ ],
+ "fields": [
+  {
+   "fieldname": "pool_id",
+   "fieldtype": "Link",
+   "label": "Pool ID",
+   "options": "Pool"
+  },
+  {
+   "fieldname": "investor_share",
+   "fieldtype": "Percent",
+   "label": "Investor Share"
+  },
+  {
+   "fieldname": "column_break_pfjkz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "charges_type",
+   "fieldtype": "Link",
+   "label": "Charges Type",
+   "options": "Charges Type"
+  },
+  {
+   "fieldname": "lender_share",
+   "fieldtype": "Percent",
+   "label": "Lender Share"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-29 15:25:12.890360",
+ "modified_by": "Administrator",
+ "module": "Loan Details",
+ "name": "Charges Configuration",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

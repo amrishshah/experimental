@@ -1,0 +1,103 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2023-10-31 19:22:55.246514",
+ "default_view": "List",
+ "description": "\n\n\n\n\n\n\n\n",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "loan_id",
+  "pool_id",
+  "partner_id",
+  "loan_xirr",
+  "pool_xirr",
+  "total_fees",
+  "investor_fees",
+  "lender_fees",
+  "outstanding_balance",
+  "xirr_flag"
+ ],
+ "fields": [
+  {
+   "fieldname": "loan_id",
+   "fieldtype": "Link",
+   "label": "Loan ID",
+   "options": "Lender Loan"
+  },
+  {
+   "fieldname": "pool_id",
+   "fieldtype": "Link",
+   "label": "Pool ID",
+   "options": "Pool"
+  },
+  {
+   "fieldname": "partner_id",
+   "fieldtype": "Link",
+   "label": "Partner ID",
+   "options": "Partner"
+  },
+  {
+   "fieldname": "loan_xirr",
+   "fieldtype": "Float",
+   "label": "Loan XIRR"
+  },
+  {
+   "fieldname": "pool_xirr",
+   "fieldtype": "Float",
+   "label": "Pool XIRR"
+  },
+  {
+   "fieldname": "total_fees",
+   "fieldtype": "Float",
+   "label": "Total Loan Fees"
+  },
+  {
+   "fieldname": "investor_fees",
+   "fieldtype": "Float",
+   "label": "Investor Fees"
+  },
+  {
+   "fieldname": "lender_fees",
+   "fieldtype": "Float",
+   "label": "Lender Fees"
+  },
+  {
+   "fieldname": "outstanding_balance",
+   "fieldtype": "Float",
+   "label": "Outstanding Balance"
+  },
+  {
+   "fieldname": "xirr_flag",
+   "fieldtype": "Select",
+   "label": "XIRR Flag",
+   "options": "Goal Seek\nManual"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-29 15:23:59.211461",
+ "modified_by": "Administrator",
+ "module": "Pool Management",
+ "name": "Draft Mapping",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

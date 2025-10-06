@@ -1,0 +1,251 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2023-09-23 12:28:37.675804",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "applicant_name",
+  "applicant_type",
+  "applicant_number",
+  "column_break_vsuxu",
+  "lender_name",
+  "pan",
+  "customer_category",
+  "personal_details_section",
+  "gender",
+  "dob",
+  "marital_status",
+  "relation_with_applicant",
+  "column_break_lflt",
+  "father_name",
+  "mother_name",
+  "spouse_name",
+  "address_and_contact_section",
+  "state",
+  "address_line_1",
+  "column_break_18k7f",
+  "email_id",
+  "contact_no",
+  "company_details",
+  "company_name",
+  "company_category",
+  "salary",
+  "constitution",
+  "gstin",
+  "column_break_tkxta",
+  "credit_score",
+  "foir",
+  "incorp_date",
+  "industry_classify"
+ ],
+ "fields": [
+  {
+   "fieldname": "pan",
+   "fieldtype": "Data",
+   "label": "PAN",
+   "length": 10,
+   "reqd": 1
+  },
+  {
+   "fieldname": "applicant_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Applicant Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name"
+  },
+  {
+   "fieldname": "company_category",
+   "fieldtype": "Data",
+   "label": "Company Category"
+  },
+  {
+   "fieldname": "contact_no",
+   "fieldtype": "Data",
+   "label": "Contact No",
+   "length": 12,
+   "reqd": 1
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email Id"
+  },
+  {
+   "fieldname": "salary",
+   "fieldtype": "Float",
+   "label": "Salary "
+  },
+  {
+   "fieldname": "credit_score",
+   "fieldtype": "Int",
+   "label": "Credit Score"
+  },
+  {
+   "fieldname": "foir",
+   "fieldtype": "Float",
+   "label": "FOIR"
+  },
+  {
+   "fieldname": "dob",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "DOB"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Gender",
+   "options": "\nMale\nFemale\nOther"
+  },
+  {
+   "fieldname": "marital_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Marital Status",
+   "options": "\nMarried\nSingle\nDivorced\nWidowed"
+  },
+  {
+   "fieldname": "column_break_18k7f",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_tkxta",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lender_name",
+   "fieldtype": "Link",
+   "label": "Lender",
+   "options": "Partner"
+  },
+  {
+   "fieldname": "column_break_vsuxu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "applicant_number",
+   "fieldtype": "Data",
+   "label": "Applicant Number"
+  },
+  {
+   "fieldname": "address_and_contact_section",
+   "fieldtype": "Section Break",
+   "label": "Address and Contact"
+  },
+  {
+   "fieldname": "company_details",
+   "fieldtype": "Section Break",
+   "label": "Company Details"
+  },
+  {
+   "fieldname": "constitution",
+   "fieldtype": "Select",
+   "label": "Constitution",
+   "options": "\nProprietary\nPartnership\nPvt. Ltd.\nLtd. Company\nOthers"
+  },
+  {
+   "fieldname": "incorp_date",
+   "fieldtype": "Date",
+   "label": "Date of Incorporation"
+  },
+  {
+   "fieldname": "father_name",
+   "fieldtype": "Data",
+   "label": "Father Name"
+  },
+  {
+   "fieldname": "mother_name",
+   "fieldtype": "Data",
+   "label": "Mother Name"
+  },
+  {
+   "default": "Individual",
+   "fieldname": "applicant_type",
+   "fieldtype": "Select",
+   "label": "Applicant Type",
+   "options": "Individual\nNon Individual",
+   "reqd": 1
+  },
+  {
+   "fieldname": "industry_classify",
+   "fieldtype": "Data",
+   "label": "Industry Classification"
+  },
+  {
+   "fieldname": "spouse_name",
+   "fieldtype": "Data",
+   "label": "Spouse Name"
+  },
+  {
+   "fieldname": "personal_details_section",
+   "fieldtype": "Section Break",
+   "label": "Personal Details"
+  },
+  {
+   "fieldname": "column_break_lflt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer_category",
+   "fieldtype": "Data",
+   "label": "Customer Category"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State"
+  },
+  {
+   "fieldname": "address_line_1",
+   "fieldtype": "Text",
+   "label": "Address Line 1",
+   "reqd": 1
+  },
+  {
+   "fieldname": "relation_with_applicant",
+   "fieldtype": "Text",
+   "label": "Relation with applicant"
+  },
+  {
+   "fieldname": "gstin",
+   "fieldtype": "Data",
+   "label": "GSTIN",
+   "length": 15
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-29 15:28:22.915161",
+ "modified_by": "Administrator",
+ "module": "Loan Details",
+ "name": "Applicant",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "applicant_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
